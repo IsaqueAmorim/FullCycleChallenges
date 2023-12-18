@@ -10,6 +10,7 @@ Esse desafio é muito empolgante principalmente se você nunca trabalhou com a l
 docker run isaqueamorim/fullcycle
 ```
 temos que ter o seguinte resultado: Full Cycle Rocks!!
+
 3. A imagem de nosso projeto Go precisa ter menos de 2MB.
 
 ### 🌐 Link DockerHub: 
