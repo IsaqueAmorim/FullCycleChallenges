@@ -1,17 +1,11 @@
-# Desafio Go
-![Docker Wallpaper](https://c4.wallpaperflare.com/wallpaper/1010/207/702/docker-containers-minimalism-typography-wallpaper-preview.jpg)
+![Alt text](/assets/Full%20Cycle.png)
 
-Você terá que publicar uma imagem no docker hub. Quando executarmos:
+# 🏆 Full Cycle Challenges
 
-````docker run <seu-user>/fullcycle````
+Esse é um repositório dedicado a armazenar os desafios propostos em cada módulo do curso Full Cycle.
 
- Temos que ter o seguinte resultado: *Full Cycle Rocks!!*
+## Docker
 
-Se você perceber, essa imagem apenas realiza um print da mensagem como resultado final, logo, vale a pena dar uma conferida no próprio site da Go Lang para aprender como fazer um "olá mundo".
+- [Golang](/Docker/Golang/README.MD)
 
-Lembrando que a Go Lang possui imagens oficiais prontas, vale a pena consultar o Docker Hub.
-
-A imagem de nosso projeto Go precisa ter menos de 2MB =)
-
-Link da imagem docker: 
-https://hub.docker.com/repository/docker/isaqueamorim/fullcycle/general
+- [NodeJS](/Docker/Golang/README.MD)
