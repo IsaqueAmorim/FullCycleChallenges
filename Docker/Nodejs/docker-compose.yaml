@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  node:
+    container_name: node
+    build: 
+      context: ./node/
+      dockerfile: Node.Dockerfile
+    networks:
+      - node-network
+    volumes:
+      - ./node:/usr/src/app
+    tty: true
+    ports:
+      - '8080:8080'
+    depends_on:
+      - db
+  
+  db:
+    image: mysql:5.7
+    container_name: mysql
+    command: --innodb-use-native-aio=0
+    restart: always
+    tty: true
+    volumes:
+      - ./mysql:/var/lib/mysql
+    networks:
+      - node-network
+    environment:
+      - MYSQL_DATABASE=PersonDB
+      - MYSQL_ROOT_PASSWORD=root
+      
+networks:
+  node-network:
+    driver: bridge
